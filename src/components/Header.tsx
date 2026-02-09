@@ -9,15 +9,8 @@ const navLinks = [
 ];
 
 export default function Header() {
-  const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   useEffect(() => {
     setMenuOpen(false);
@@ -25,10 +18,8 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-260 ${scrolled
-        ? "bg-card/95 backdrop-blur-md shadow-sm border-b border-border"
-        : "bg-transparent"
-        }`}
+      className={`fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md shadow-sm border-b border-border"
+} `}
     >
       <div className="container-site flex items-center justify-between h-16 md:h-18">
         <Link to="/" className="flex flex-col leading-tight" aria-label="Home">
@@ -43,14 +34,14 @@ export default function Header() {
             <Link
               key={link.to}
               to={link.to}
-              className={`text-sm transition-colors duration-200 hover:text-primary ${location.pathname === link.to ? "text-primary font-medium" : "text-muted-foreground"
-                }`}
+              className={`text - sm transition - colors duration - 200 hover: text - primary ${location.pathname === link.to ? "text-primary font-medium" : "text-muted-foreground"
+                } `}
             >
               {link.label}
             </Link>
           ))}
           <a
-            href={`tel:${SITE_CONFIG.phone.replace(/\s/g, "")}`}
+            href={`tel:${SITE_CONFIG.phone.replace(/\s/g, "")} `}
             className="cta-gradient text-primary-foreground px-5 py-2 rounded-full text-sm font-medium transition-opacity hover:opacity-90"
           >
             Chiama ora
@@ -63,9 +54,9 @@ export default function Header() {
           aria-label={menuOpen ? "Chiudi menu" : "Apri menu"}
           aria-expanded={menuOpen}
         >
-          <span className={`block w-5 h-0.5 bg-foreground transition-transform duration-200 ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
-          <span className={`block w-5 h-0.5 bg-foreground transition-opacity duration-200 ${menuOpen ? "opacity-0" : ""}`} />
-          <span className={`block w-5 h-0.5 bg-foreground transition-transform duration-200 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+          <span className={`block w - 5 h - 0.5 bg - foreground transition - transform duration - 200 ${menuOpen ? "rotate-45 translate-y-2" : ""} `} />
+          <span className={`block w - 5 h - 0.5 bg - foreground transition - opacity duration - 200 ${menuOpen ? "opacity-0" : ""} `} />
+          <span className={`block w - 5 h - 0.5 bg - foreground transition - transform duration - 200 ${menuOpen ? "-rotate-45 -translate-y-2" : ""} `} />
         </button>
       </div>
 
@@ -76,14 +67,14 @@ export default function Header() {
               <Link
                 key={link.to}
                 to={link.to}
-                className={`text-base py-2 transition-colors ${location.pathname === link.to ? "text-primary font-medium" : "text-muted-foreground"
-                  }`}
+                className={`text - base py - 2 transition - colors ${location.pathname === link.to ? "text-primary font-medium" : "text-muted-foreground"
+                  } `}
               >
                 {link.label}
               </Link>
             ))}
             <a
-              href={`tel:${SITE_CONFIG.phone.replace(/\s/g, "")}`}
+              href={`tel:${SITE_CONFIG.phone.replace(/\s/g, "")} `}
               className="cta-gradient text-primary-foreground px-5 py-3 rounded-full text-sm font-medium text-center mt-2"
             >
               Chiama ora
