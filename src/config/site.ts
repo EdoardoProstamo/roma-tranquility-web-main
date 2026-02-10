@@ -22,8 +22,8 @@ export const SITE_CONFIG = {
   email: "nicofmilano@gmail.com",
   piva: "DA INSERIRE",
   hours: "DA INSERIRE",
-  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Via+Ercole+Pasquali+9+Roma",
-  googleReviewsUrl: "DA INSERIRE",
+  googleMapsUrl: "https://www.google.com/maps/place/Dott.+Nicola+Francesco+Milano+Psicologo/@41.907845,12.5171446,17z/data=!3m1!4b1!4m6!3m5!1s0x132f612219d1087b:0x51e46c3f59a2c2de!8m2!3d41.907845!4d12.5197195!16s%2Fg%2F11yv54pl05?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D",
+  googleReviewsUrl: "https://www.google.com/search?sca_esv=f5bb93abf84105ec&sxsrf=ANbL-n78K4OqQwZyh9OBwkuuuhKWiskWfw:1770715256812&q=dott.+nicola+francesco+milano+recensioni&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOQVjXj7r_S5scJHX7MOfLvOCfJfXnySUQHcAu1tTKRPGYPtlsgFhfWNAaDIODtyqVpnb46E%3D&uds=ALYpb_mreo8tBWh2fc76uYcDhVhG54p8v2lTn_M-ZrUs65NkVf-sor4oFVvgCj9m5hLfYrAnF0cEdGonune5mroQEMQKoQdHSrEX327_VYTHRQ__X4Rdu4-KlzwUwx_sONrxhxn9-2szMUX3FQtNbVu5HC0Vzqk2yA&sa=X&ved=2ahUKEwiWxIWvzM6SAxXU5gIHHY9zDbcQ3PALegQIKRAF&biw=1528&bih=732&dpr=1.25",
   services: [
     {
       title: "Supporto psicologico individuale",
